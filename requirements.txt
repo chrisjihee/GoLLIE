@@ -1,0 +1,17 @@
+# Deep Learning
+--extra-index-url https://download.pytorch.org/whl/cu118
+peft
+torch
+transformers
+bitsandbytes
+
+tqdm
+rich
+numpy
+black
+Jinja2
+psutil
+datasets
+ruff
+wandb
+fschat
