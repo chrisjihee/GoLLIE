@@ -15,3 +15,5 @@ datasets
 ruff
 wandb
 fschat
+packaging
+ninja
