@@ -7,11 +7,11 @@ bitsandbytes
 
 tqdm
 rich
-numpy
+numpy<2.0.0
 black
 Jinja2
 psutil
-datasets
+datasets==2.14.3
 ruff
 wandb
 fschat
