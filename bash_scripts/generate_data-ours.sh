@@ -20,7 +20,6 @@ python -m src.generate_data \
         ${CONFIG_DIR}/harveyner_config.json \
         ${CONFIG_DIR}/mitmovie_config.json \
         ${CONFIG_DIR}/mitrestaurant_config.json \
-        ${CONFIG_DIR}/multinerd_config.json \
         ${CONFIG_DIR}/ncbidisease_config.json \
         ${CONFIG_DIR}/ontonotes_config.json \
         ${CONFIG_DIR}/wnut17_config.json \
