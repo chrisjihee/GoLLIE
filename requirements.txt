@@ -11,7 +11,7 @@ numpy<2.0.0
 black
 Jinja2
 psutil
-datasets==2.14.3
+datasets<3.0.0
 fsspec<2023.10.0
 ruff
 wandb
