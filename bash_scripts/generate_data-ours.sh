@@ -23,8 +23,6 @@ python -m src.generate_data \
         ${CONFIG_DIR}/multinerd_config.json \
         ${CONFIG_DIR}/ncbidisease_config.json \
         ${CONFIG_DIR}/ontonotes_config.json \
-        ${CONFIG_DIR}/tacred_config.json \
-        ${CONFIG_DIR}/wikievents_config.json \
         ${CONFIG_DIR}/wnut17_config.json \
      --output ${OUTPUT_DIR} \
      --overwrite_output_dir \
