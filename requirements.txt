@@ -7,7 +7,7 @@ bitsandbytes
 
 tqdm
 rich
-numpy<2.0.0
+numpy
 black
 Jinja2
 psutil
