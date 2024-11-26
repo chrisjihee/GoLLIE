@@ -1,0 +1,11 @@
+(GoLLIE) chrisjihee@ptlm2:~/proj/GoLLIE$ python3 -m src.run ${CONFIGS_FOLDER}/GoLLIE-7B_CodeLLaMA.yaml
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/chrisjihee/proj/GoLLIE/src/run.py", line 16, in <module>
+    from src.trainer import CollieTrainer, ConcatDataset, get_correct_torch_dtype
+  File "/home/chrisjihee/proj/GoLLIE/src/trainer.py", line 10, in <module>
+    from torch.utils.data.dataset import Iterable, IterableDataset, T_co
+ImportError: cannot import name 'T_co' from 'torch.utils.data.dataset' (/home/chrisjihee/miniforge3/envs/GoLLIE/lib/python3.11/site-packages/torch/utils/data/dataset.py)
+(GoLLIE) chrisjihee@ptlm2:~/proj/GoLLIE$
+
