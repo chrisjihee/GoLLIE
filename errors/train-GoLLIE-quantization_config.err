@@ -1,0 +1,44 @@
+/home/chrisjihee/miniforge3/envs/GoLLIE/bin/python -m src.run configs/model_configs/GoLLIE-7B_CodeLLaMA.yaml
+INFO:root:Sys args ['/home/chrisjihee/proj/GoLLIE/src/run.py', 'configs/model_configs/GoLLIE-7B_CodeLLaMA.yaml']
+INFO:root:Loading yaml config configs/model_configs/GoLLIE-7B_CodeLLaMA.yaml
+/home/chrisjihee/miniforge3/envs/GoLLIE/lib/python3.11/site-packages/transformers/training_args.py:1568: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+INFO:root:Loading codellama/CodeLlama-7b-hf model...
+INFO:root:Loading model model from codellama/CodeLlama-7b-hf
+INFO:root:We will load the model using the following device map: None and max_memory: None
+WARNING:root:Tokenizer does not have a pad token, we will use the unk token as pad token.
+INFO:root:Bits and Bytes config: {
+    "quant_method": "bitsandbytes",
+    "_load_in_8bit": false,
+    "_load_in_4bit": true,
+    "llm_int8_threshold": 6.0,
+    "llm_int8_skip_modules": null,
+    "llm_int8_enable_fp32_cpu_offload": false,
+    "llm_int8_has_fp16_weight": false,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "bfloat16",
+    "bnb_4bit_quant_storage": "uint8",
+    "load_in_4bit": true,
+    "load_in_8bit": false
+}
+WARNING:root:Model codellama/CodeLlama-7b-hf is an decoder-only model. We will load it as a CausalLM model.
+>>>> Flash Attention installed
+>>>> Flash RoPE installed
+WARNING:root:Using Flash Attention for LLaMA model.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/chrisjihee/proj/GoLLIE/src/run.py", line 353, in <module>
+    train_collie(
+  File "/home/chrisjihee/proj/GoLLIE/src/run.py", line 41, in train_collie
+    model, tokenizer = load_model(
+                       ^^^^^^^^^^^
+  File "/home/chrisjihee/proj/GoLLIE/src/model/load_model.py", line 390, in load_model
+    model: PreTrainedModel = load_fn.from_pretrained(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chrisjihee/miniforge3/envs/GoLLIE/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3584, in from_pretrained
+    raise ValueError(
+ValueError: You can't pass `load_in_4bit`or `load_in_8bit` as a kwarg when passing `quantization_config` argument at the same time.
+
+Process finished with exit code 1
