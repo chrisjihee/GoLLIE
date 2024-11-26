@@ -10,50 +10,23 @@ use_flash_attention: true
 
 # dataset arguments
 dataset_dir:
-  /ikerlariak/osainz006/GoLLIE/data/processed_w_examples
+  data/processed_w_examples
 train_tasks:
-  - ace05.eae
-  - ace05.ee
-  - ace05.ner
-  - ace05.rc
-  - ace05.re
-  - ace05.ver
   - bc5cdr.ner
   - conll03.ner
-  - diann.ner
   - ncbidisease.ner
   - ontonotes5.ner
-  - rams.eae
-  - tacred.sf
   - wnut17.ner
 validation_tasks:
-  - ace05.ee
   - conll03.ner
 test_tasks:
-  - ace05.eae
-  - ace05.ee
-  - ace05.ner
-  - ace05.rc
-  - ace05.re
-  - ace05.ver
   - bc5cdr.ner
   - conll03.ner
-  - diann.ner
   - ncbidisease.ner
   - ontonotes5.ner
-  - rams.eae
-  - tacred.sf
-  - wikievents.eae
-  - wikievents.ee
-  - wikievents.ner
   - wnut17.ner
-  - e3c.ner
-  - broadtwitter.ner
   - fabner.ner
   - harveyner.ner
-  - multinerd.ner
-  - casie.eae
-  - casie.ee
   - mitmovie.ner
   - mitrestaurant.ner
   - crossner.crossner_ai
@@ -70,7 +43,7 @@ ignore_pad_token_for_loss: true
 prompt_loss_weight: 0.0
 
 # checkpoint settings
-output_dir: /ikerlariak/osainz006/models/GoLLIE/GoLLIE+-7b_CodeLLaMA
+output_dir: output/GoLLIE/GoLLIE-7B_CodeLLaMA
 overwrite_output_dir: true
 load_best_model_at_end: false
 save_strategy: "epoch"
@@ -114,7 +87,7 @@ logging_strategy: steps
 logging_first_step: true
 logging_steps: 25
 report_to: wandb
-run_name: "GoLLIE+-7b_CodeLLaMA"
+run_name: "GoLLIE-7B_CodeLLaMA"
 disable_tqdm: false
 
 # hub settings
