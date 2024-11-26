@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /gscratch4/users/osainz006/GoLLIE/venv/GoLLIE/bin/activate
+mamba activate GoLLIE
 
 CONFIG_DIR="configs/data_configs"
 

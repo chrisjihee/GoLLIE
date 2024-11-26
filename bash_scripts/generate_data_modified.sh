@@ -1,6 +1,6 @@
 #!/bin/bash
 
-conda activate GoLLIE
+mamba activate GoLLIE
 CONFIG_DIR="configs/data_configs"
 
 OUTPUT_DIR="data/processed_w_examples"

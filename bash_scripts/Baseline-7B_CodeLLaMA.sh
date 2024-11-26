@@ -7,7 +7,7 @@
 #SBATCH --error=.slurm/Baseline-7B_CodeLLaMA.err.txt
 
 
-source /ikerlariak/osainz006/venvs/GoLLIE/bin/activate
+mamba activate GoLLIE
 
 
 export LC_ALL=en_US.UTF-8
