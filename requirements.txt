@@ -1,9 +1,10 @@
 # Deep Learning
 --extra-index-url https://download.pytorch.org/whl/cu118
 peft
-torch
+torch<2.5.0
 transformers
 bitsandbytes
+flash-attn>=2.7.0
 
 tqdm
 rich

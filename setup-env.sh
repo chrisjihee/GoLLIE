@@ -8,7 +8,6 @@ mamba install -n GoLLIE \
   libcusparse=11 libcusparse-dev=11 libcublas=11 libcublas-dev=11 \
   -c nvidia -c pytorch -y
 pip install -U -r requirements.txt;
-MAX_JOBS=12 pip install flash-attn==2.0.4 --no-build-isolation;
 
 # data
 #bash bash_scripts/generate_data-possible.sh
