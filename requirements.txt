@@ -2,9 +2,9 @@
 --extra-index-url https://download.pytorch.org/whl/cu118
 peft
 torch<2.5.0
-transformers
-bitsandbytes
 flash-attn>=2.7.0
+bitsandbytes
+transformers<4.46.0
 
 tqdm
 rich
